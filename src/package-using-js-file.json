@@ -1,0 +1,19 @@
+{
+  "name": "run-multiple-npm-scripts",
+  "version": "0.0.1",
+  "description": "A node script that runs configured multiple npm scripts or whatever you want at once",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-s tab:run-outside tab:run-inside",
+    "run-outside": "node index OUTSIDE",
+    "run-inside": "node index INSIDE",
+    "tab:run-outside": "ttab -t 'Outside Bash' npm run run-outside",
+    "tab:run-inside": "ttab -t 'Inside Bash' npm run run-inside"
+  },
+  "author": "alisabrigok",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "ttab": "^0.6.1"
+  }
+}

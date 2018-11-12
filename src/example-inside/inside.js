@@ -1,0 +1,1 @@
+console.log('Wohoo... I\'m executed by npm script from inside!!');
