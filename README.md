@@ -1,4 +1,4 @@
-# Run Multiple Different Npm Scripts _- Or Whatever You Want -_ At Once With A Single Command
+# Run Multiple Different Npm Scripts _-Or Whatever You Want-_ At Once With A Single Command
 
 tl;dr just include the command and the relative path the command to be executed at to package.json - then npm start and done.
 
