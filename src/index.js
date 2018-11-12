@@ -29,6 +29,6 @@ exec(command, (error, stdout, stderr) => {
     if (stderr || error) {
         console.log('An Error Occured!');
     } else {
-        console.log(commandName, 'Command Succesfull');
+        console.log(commandName, 'Command Successful');
     }
 });
