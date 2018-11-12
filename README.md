@@ -2,6 +2,8 @@
 
 **tl;dr** just include the command and the relative path the command to be executed at to package.json - then npm start and done.
 
+**Note:** Currently what's written here only works for macOS installed devices. Because ttab package doesn't support any other OS for now. Bummer! I learned it when I tested it at home on a Windows device after I finished up writing this whole thing ¯\_(ツ)\_/¯
+
 ## Motivation
 
 We have several different front-end projects in my company. And each one of them has its own way to run the project.
