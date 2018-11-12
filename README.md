@@ -22,15 +22,15 @@ Then I said;
 
 Makes sense right?
 
-Appereantly it was.
+Apparently, it was.
 
 It's no biggie really. There are already plenty of instructions for how to run multiple npm scripts on online.
 
 i.e. [The video I mostly learned what I implemented in this repository](https://egghead.io/lessons/npm-open-multiple-terminal-tabs-on-npm-start-with-ttab-and-npm-run-all 'The video I mostly got what I implemented in this repository')
 
-But usually these instructions are for running the scripts that are belong to the same package.json.
+But usually, these instructions are for running the scripts that belong to the same package.json.
 
-What about running scripts that are belong to multiple other package.json?
+What about running scripts that belong to multiple other package.json?
 
 ## Let's Begin
 
@@ -41,7 +41,7 @@ _Hold my tea._
 Clone or download this repository.
 Decide which methods that are explained below you will use.
 Go to the repository's directory and change the name of the package.json you want to use.
-Finally install the dependencies:
+Finally, install the dependencies:
 
 `npm install`
 
@@ -75,7 +75,7 @@ Let's break it down from bottom to top:
 
 `"tab:run-inside": ttab -t 'Bash Name' commandToBeRun` -> Used for openning a new tab with the given bash name and then running the provided command. "tab:run-inside" is basically the name of this command.
 
-`"run-inside": "npm start --prefix ./example-inside,` -> Used for executing another npm script using its relative path which might be belong to a compeletly different project. --prefix is used for that npm to run its own command on that relative path.
+`"run-inside": "npm start --prefix ./example-inside,` -> Used for executing another npm script using its relative path which might be belong to a completely different project. --prefix is used for that npm to run its own command on that relative path.
 
 `"run-outside": "node ../example-outside/outside"` -> Same as above but this time we only run a JavaScript file directly. So our commands can take shape however we want.
 
@@ -91,7 +91,7 @@ For my case in my company, I use this method to set some configuration variables
 
 ## The Interesting Way
 
-**Note:** Using this method, you don't actually see the outcomes of your runned script on the bash that opened on the new tab. It runs without any issue but you don't see any logs.
+**Note:** Using this method, you don't actually see the outcomes of your ran script on the bash that opened on the new tab. It runs without any issue but you don't see any logs.
 
 For this method, we use the package-using-js-file.json inside of the src folder. So rename it to package.json and delete the other one if you want.
 
@@ -125,11 +125,11 @@ This means we can use them to conditionally run whichever command we want. And t
 
 - Then for each element of this array, we conditionally created our command.
 
-`path.join(os.homedir(), 'Desktop/run-custom-npm-scripts/example-outside/outside')` -> gets the path of the file we want to execute, by starting from home directory of any operation system.
+`path.join(os.homedir(), 'Desktop/run-custom-npm-scripts/example-outside/outside')` -> gets the path of the file we want to execute, by starting from the home directory of any operating system.
 
 - Finally we used a child process to execute the command we just created.
 
-And voila, again new tabs open for each command and they gets executed.
+And voila, again new tabs open for each command and they get executed.
 
 Same logic as the easy way applies here from the package.json.
 
