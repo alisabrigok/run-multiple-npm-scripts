@@ -4,7 +4,7 @@
 
 **Note:** Currently what's written here only works for macOS installed devices. Because ttab package doesn't support any other OS for now.
 
-Bummer! I learned it when I tested it at home on a Windows device after I finished up writing this whole thing... ¯\\\_(ツ)\_/¯
+Bummer! I learned it when I tested it at home on a Windows device after I finishing up writing this whole thing... ¯\\\_(ツ)\_/¯
 
 ## Motivation
 
