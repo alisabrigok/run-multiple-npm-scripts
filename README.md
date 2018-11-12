@@ -1,6 +1,6 @@
 # Run Multiple Different Npm Scripts _-Or Whatever You Want-_ At Once With A Single Command
 
-tl;dr just include the command and the relative path the command to be executed at to package.json - then npm start and done.
+**tl;dr** just include the command and the relative path the command to be executed at to package.json - then npm start and done.
 
 ## Motivation
 
@@ -91,7 +91,7 @@ For my case in my company, I use this method to set some configuration variables
 
 ## The Interesting Way
 
-**Note: **Using this method, you don't actually see the outcomes of your runned script on the bash that opened on the new tab. It runs without any issue but you don't see any logs.
+**Note:** Using this method, you don't actually see the outcomes of your runned script on the bash that opened on the new tab. It runs without any issue but you don't see any logs.
 
 For this method, we use the package-using-js-file.json inside of the src folder. So rename it to package.json and delete the other one if you want.
 
