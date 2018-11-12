@@ -111,6 +111,8 @@ This holds an array whose elements can be used by our favor. So basically it's
 1st element -> /Users/someLocation/file-name.js
 2nd, 3rd, 4th etc. element -> the other arguments we use after node file-name.js
 
+[More information about it](https://stackoverflow.com/a/22214067 'More information about it')
+
 So if we had
 
 `node file-name.js 'yo' 'wudup'`
